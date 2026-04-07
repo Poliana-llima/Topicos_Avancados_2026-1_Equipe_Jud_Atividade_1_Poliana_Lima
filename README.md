@@ -11,7 +11,7 @@ A comparação foi realizada em dois cenários distintos:
 - **questões abertas**, com avaliação qualitativa por inferência comparativa;
 - **questões fechadas**, com avaliação quantitativa baseada em gabarito explícito.
 
-O objetivo do projeto é observar como os modelos se comportam em tarefas jurídicas, considerando não apenas acertos, mas também aderência temática, fundamentação legal, estilo de resposta e consistência geral. :contentReference[oaicite:3]{index=3}
+O objetivo do projeto é observar como os modelos se comportam em tarefas jurídicas, considerando não apenas acertos, mas também aderência temática, fundamentação legal, estilo de resposta e consistência geral. 
 
 ---
 
@@ -46,7 +46,7 @@ Dataset de questões objetivas da OAB com gabarito explícito.
 No relatório final, foram analisadas:
 
 - **10 questões abertas**
-- **106 questões fechadas** :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+- **106 questões fechadas** 
 
 ---
 
@@ -76,7 +76,7 @@ Mede o quanto as respostas dos modelos se parecem entre si, sem avaliar correç�
 Score heurístico baseado na densidade de referências normativas.
 
 #### Índice de divergência por questão
-Métrica composta para identificar onde os modelos mais se afastam entre si. :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
+Métrica composta para identificar onde os modelos mais se afastam entre si.
 
 ### 2. Questões fechadas
 Nas questões objetivas, cada resposta foi comparada diretamente com o campo `answerKey`.
@@ -92,7 +92,7 @@ As métricas foram:
 #### Exact Match (EM)
 Proporção de respostas que coincidem exatamente com o gabarito.
 
-Como as questões fechadas possuem apenas uma alternativa correta (`A`, `B`, `C` ou `D`), o valor de **EM coincide com a acurácia**. :contentReference[oaicite:8]{index=8}
+Como as questões fechadas possuem apenas uma alternativa correta (`A`, `B`, `C` ou `D`), o valor de **EM coincide com a acurácia**.
 
 ---
 
@@ -119,7 +119,7 @@ Como as questões fechadas possuem apenas uma alternativa correta (`A`, `B`, `C`
 - O **Claude Sonnet 4.6** foi o modelo mais aderente ao dataset e o que apresentou a base legal mais completa.
 - O **GPT-5.3** se destacou pela objetividade e concisão.
 - O **Gemini** apresentou comportamento intermediário, com respostas mais variáveis.
-- A baixa similaridade entre os textos mostra que os modelos têm estilos argumentativos e enquadramentos jurídicos distintos. :contentReference[oaicite:9]{index=9}
+- A baixa similaridade entre os textos mostra que os modelos têm estilos argumentativos e enquadramentos jurídicos distintos.
 
 ---
 
@@ -136,13 +136,13 @@ Total de questões analisadas: **106**
 ### Síntese quantitativa
 - O **Claude Sonnet 4.6** apresentou o melhor desempenho geral.
 - O **ChatGPT 5.3** teve resultado intermediário.
-- O **Gemini** obteve o menor desempenho nesta base. :contentReference[oaicite:10]{index=10}
+- O **Gemini** obteve o menor desempenho nesta base.
 
 ---
 
 ## Conclusão geral
 
-A análise conjunta mostra que o **Claude Sonnet 4.6** foi o modelo mais consistente no cenário analisado, reunindo melhor desempenho qualitativo nas questões abertas e melhor desempenho quantitativo nas questões fechadas. O **GPT-5.3** apresentou respostas mais objetivas e concisas, com desempenho intermediário nas questões objetivas. O **Gemini**, embora tenha produzido respostas elaboradas em parte das questões abertas, ficou abaixo dos demais nas métricas fechadas. Em conjunto, os resultados mostram que a avaliação de modelos jurídicos deve considerar tanto métricas quantitativas quanto aspectos qualitativos de fundamentação, aderência temática e consistência argumentativa. :contentReference[oaicite:11]{index=11}
+A análise conjunta mostra que o **Claude Sonnet 4.6** foi o modelo mais consistente no cenário analisado, reunindo melhor desempenho qualitativo nas questões abertas e melhor desempenho quantitativo nas questões fechadas. O **GPT-5.3** apresentou respostas mais objetivas e concisas, com desempenho intermediário nas questões objetivas. O **Gemini**, embora tenha produzido respostas elaboradas em parte das questões abertas, ficou abaixo dos demais nas métricas fechadas. Em conjunto, os resultados mostram que a avaliação de modelos jurídicos deve considerar tanto métricas quantitativas quanto aspectos qualitativos de fundamentação, aderência temática e consistência argumentativa.
 
 ---
 
