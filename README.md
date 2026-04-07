@@ -146,31 +146,22 @@ A análise conjunta mostra que o **Claude Sonnet 4.6** foi o modelo mais consist
 
 ---
 
-## Estrutura sugerida do repositório
+## REPLICANDO OS TESTES
+Para replicar esse experimento, siga os seguintes passos:
+	- Escolha as Inteligências artificiais .
+	- Insira os prompts (para questões abertas e fechadas estão no arquivo relatório Poliana Lima).
+	- Insira o dataset limpo e em formato json, ficará mais fácil a leitura da IA nesse formato.
+  - Confira se a IA trouxe no formato desejado, observe se ela não esqueceu nenhuma pergunta
+  - Após essa análise, salve os arquivos em formato json
+  - No Google Colab, acesse esse notebook: https://colab.research.google.com/drive/1sNivciemuFnluz17L6KlYiRmU7nFlWEB
+  - Na lateral esquerda, clique em Arquivos, e faça o update dos seus arquivos. Importe que você suba o dataset das questões abertas e fechadas.
+  - No código do google colab, altere o nome dos arquivos conforme o que você salvou. Os meus dados estão nesse formato:
+DATASET_PATH = "Dataset_extarido.txt"
+MODEL_FILES = {
+ "GPT-5.3": "respostas_gpt5.3_abertas.json",
+  "Claude Sonnet 4.6": "respostas_claud.iaSonnet4.6_abertas.json",
+ "Gemini": "respostas_gemini_abertas.json",
+}
+  - Após inserir seus arquivos e renomear as variáveis, basta clicar no play e observar os resultados
 
-```bash
-.
-├── data/
-│   ├── Dataset_extarido.txt
-│   ├── respostas_gpt5.3_abertas.json
-│   ├── respostas_claud.iaSonnet4.6_abertas.json
-│   ├── respostas_gemini_abertas.json
-│   └── resultado questões fechadas.pdf
-├── outputs/
-│   ├── grafico_1_distribuicao_niveis.png
-│   ├── grafico_2_aderencia_categoria.png
-│   ├── grafico_3_similaridade_pares.png
-│   ├── grafico_4_divergencia_questao.png
-│   ├── grafico_5_completude_base_legal.png
-│   ├── grafico_pizza_acuracia.png
-│   ├── metricas_graficos_llms.xlsx
-│   ├── metricas_por_questao.csv
-│   ├── resultado_questoes_fechadas_metricas.csv
-│   └── resultado_questoes_fechadas_metricas.xlsx
-├── notebooks/
-│   ├── analise_questoes_abertas.ipynb
-│   └── analise_questoes_fechadas.ipynb
-├── scripts/
-│   ├── analise_abertas.py
-│   └── analise_fechadas.py
-└── README.md
+
